@@ -25,17 +25,34 @@ export default function Home() {
           <h2 className="text-4xl">What?</h2>
           <div className="flex-grow-0 flex-shrink flex flex-col justify-center">
             <div>
-              <button class="border bg-white border-teal-700 text-gray-800 py-1 px-2 rounded-l-md">now</button>
-              <button class="border bg-gray-200 bg-opacity-50 border-l-0 text-gray-800 border-teal-700 py-1 px-2 rounded-r-md">later</button>
+              <button class="border bg-white border-teal-700 text-black py-1 px-2 rounded-l-md">now</button>
+              <button class="border bg-gray-200 bg-opacity-50 border-l-0 text-teal-700 border-teal-700 py-1 px-2 rounded-r-md">later</button>
+            </div>
+          </div>
+        </div>
+        <p className="mt-8 mb-8 text-teal-700">...some form here</p>
+      </div>
+      <div className="bg-gray-400 px-4 py-6">
+        <div className="flex flex-row align-middle justify-between">
+          <h2 className="text-4xl">When?</h2>
+          <div className="flex-grow-0 flex-shrink flex flex-col justify-center">
+            <div>
+              <button class="border bg-gray-200 bg-opacity-50 border-gray-700 text-gray-700 py-1 px-2 rounded-l-md">now</button>
+              <button class="border bg-white border-l-0 text-black border-gray-700 py-1 px-2 rounded-r-md">later</button>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-gray-400 px-4 py-6">
-        <h2 className="text-4xl">When?</h2>
-      </div>
       <div className="bg-gray-300 px-4 py-6">
-        <h2 className="text-4xl">Who?</h2>
+        <div className="flex flex-row align-middle justify-between">
+          <h2 className="text-4xl">Who?</h2>
+          <div className="flex-grow-0 flex-shrink flex flex-col justify-center">
+            <div>
+              <button class="border bg-gray-200 bg-opacity-50 border-gray-700 text-gray-700 py-1 px-2 rounded-l-md">now</button>
+              <button class="border bg-white border-l-0 text-black border-gray-700 py-1 px-2 rounded-r-md">later</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
