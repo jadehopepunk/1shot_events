@@ -7,7 +7,7 @@ const EmojiWord = ({ children }) => (
 const Hero = () => (
   <div className="bg-blue-400 px-4 py-20">
     <div className="flex flex-col align-middle">
-      <h1 className="text-5xl text-center font-medium mb-2">1Shot</h1>
+      {/* <h1 className="text-5xl text-center font-medium mb-2">1Shot</h1> */}
       <p className="text-3xl text-center mb-4">
         Create a free, untracked <EmojiWord>event 🗓️</EmojiWord> for your <EmojiWord>friends 😎</EmojiWord> that{" "}
         <EmojiWord>deletes itself 👻</EmojiWord> when you're done
@@ -30,7 +30,31 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="mt-8 mb-8 text-teal-700">...some form here</p>
+        <div className="py-4">
+          <div className="">
+            <label class="block text-gray-800 text-sm font-medium mb-2" for="username">
+              Give your event a title...
+            </label>
+            <input
+              class="appearance-none border border-teal-700 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="title"
+              type="text"
+              placeholder="Title"
+            />
+          </div>
+          <div className="mt-4">
+            <label class="block text-gray-800 text-sm font-medium mb-2" for="username">
+              and an emoji that describes it
+            </label>
+            <input
+              class="appearance-none border border-teal-700 rounded w-12 py-2 px-3 text-center leading-tight focus:outline-none focus:shadow-outline bg-teal-200"
+              id="emoji"
+              type="text"
+              value="🎂"
+              placeholder="Emoji"
+            />
+          </div>
+        </div>
       </div>
       <div className="bg-gray-400 px-4 py-6">
         <div className="flex flex-row align-middle justify-between">
